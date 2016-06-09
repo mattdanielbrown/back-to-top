@@ -1,0 +1,131 @@
+/* ---------------------------------------------------------------------------------------------------------------------
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------
+Primary style
+-------------------------------- */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 300; }
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-size: 100%;
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: #f5f4ed;
+  background-color: rgba(20, 36, 64, 0.77); }
+
+a {
+  color: rgba(58, 82, 255, 0.73);
+  text-decoration: none; }
+
+/* ---------------------------------------------------------------------------------------------------------------------
+Modules - reusable parts of our design
+-------------------------------- */
+.cd-container {
+  width: 90%;
+  max-width: 768px;
+  margin: 2em auto; }
+  .cd-container::after {
+    /* clearfix */
+    content: '';
+    display: table;
+    clear: both; }
+
+.fullscreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  min-height: 100vh; }
+
+/* ---------------------------------------------------------------------------------------------------------------------
+Main components
+-------------------------------- */
+header {
+  background: rgba(20, 36, 63, 0.77);
+  text-align: center; }
+  header h1 {
+    font-size: 2em;
+    font-weight: 100;
+    margin-bottom: 0.7em; }
+  header p {
+    color: rgba(125, 157, 214, 0.77); }
+  header h3 {
+    margin-bottom: 1.5em;
+    padding: 5%;
+    font-size: 1em;
+    font-weight: 100;
+    line-break: auto;
+    line-height: 1.5em; }
+  @media only screen and (min-width: 768px) {
+    header h1 {
+      font-size: 3em; }
+    header h3 {
+      font-size: 1.5em;
+      padding: 1%; } }
+
+main p {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 2em 0; }
+@media only screen and (min-width: 1024px) {
+  main p {
+    font-size: 20px;
+    font-size: 1.25rem; } }
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(58, 82, 255, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  border-radius: 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s; }
+  .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s; }
+  .cd-top.cd-is-visible {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1; }
+  .cd-top.cd-fade-out {
+    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+    opacity: .5; }
+  .no-touch .cd-top:hover {
+    background-color: #3a52ff;
+    opacity: 1; }
+  @media only screen and (min-width: 768px) {
+    .cd-top {
+      right: 20px;
+      bottom: 20px; } }
+  @media only screen and (min-width: 1024px) {
+    .cd-top {
+      height: 60px;
+      width: 60px;
+      right: 30px;
+      bottom: 30px; } }
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/*# sourceMappingURL=style.css.map */
