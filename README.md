@@ -21,4 +21,4 @@ The button is originally hidden, and fades in as the user scrolls.
 See It In Action
 ----------------
 
-[Demo Here](https://matthewdanielbrown.com/portfolio-demos/back-to-top)
+[Demo Here](https://matthewdanielbrown.com/dev/demo/back-to-top)
