@@ -20,17 +20,29 @@ html * {
   font-weight: 300;
 }
 
+html {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 *, *:after, *:before {
 	@include box-sizing(border-box);
 }
 
 body {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  width:100%;
 	font: {
-		size: 100%;
+		//size: 100%;
 		family: $primary-font; // variables inside partials > _variables.scss
 	}
 	color: $main-text;
-	background-color: $background;
+	background-color: $background-color;
 }
 
 a {
@@ -38,7 +50,42 @@ a {
 	text-decoration: none;
 }
 
+footer {
+  background-color: $background-color;
+  color: $secondary-background-color;
 
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  height: 25vh;
+
+  p {
+	margin: 1%;
+	padding: 1%;
+	font-weight: 400;
+  }
+
+  a {
+	font-size: small;
+	text-decoration: underline;
+	margin: 0.5%;
+	padding: 0.5%;
+	font-weight: 400;
+	color: #245183;
+  }
+  a:hover {
+	color: #4294f0;
+  }
+  a:active {
+	color: #98acd0;
+  }
+
+  margin: 1%;
+  padding: 2%;
+}
 
 
 
@@ -47,9 +94,14 @@ Modules - reusable parts of our design
 -------------------------------- */
 
 .cd-container {
-  width: 90%;
-  max-width: $M; // breakpoints inside partials > _layout.scss
-  margin: 2em auto;
+  //width: 90%;
+
+  //max-width: $M; // breakpoints inside partials > _layout.scss
+  //margin: 2em auto;
+  padding: 6rem;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
 
   &::after { /* clearfix */
     content: '';
@@ -74,7 +126,7 @@ Main components
 -------------------------------- */
 
 header {
-	background: darken($background, 0.2%);
+	//background: darken($background-color, 0.2%);
 	//height: 100px;
 	text-align: center;
 
@@ -90,7 +142,7 @@ header {
 
 	p {
 		//@include font-size(13px);
-		color: lighten($background, 50%);
+		color: lighten($background-color, 50%);
 	}
 
   	h3 {
@@ -123,6 +175,12 @@ header {
 }
 
 main {
+  background-color: $secondary-background-color;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
 	p {
 		@include font-size(16px);
 		line-height: 1.6;
