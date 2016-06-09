@@ -1,2 +1,2 @@
-# back-to-top
-HTML/jQuery Module That Adds A Persistent Sticky Button That Auto-Scrolls To Top Of Page.
+# Back-To-Top Button
+HTML/jQuery Module That Adds A Persistent Sticky Button To The Bottom Corner Of The Window And Allows User To Auto-Scroll To Top Of The Page.
