@@ -14,9 +14,9 @@ Upon returning to, or passing that point, the button smoothly fades out, ensurin
 
 The module is also responsive: The button's size and position adjust according to the screen/window size.
 
-Note: This project still requires some work before it achieves the ability to be 'dropped-into' projects. However, consitency in design and coding practices, functional reliability, and improving workflow and productivity remain extremely important to me. As such, I will continue to work on this project, and other new ones like it, with the same original goal in mind.
+__Note:__ _This project still requires some work before it achieves the ability to be 'dropped-into' projects. However, consitency in design and coding practices, functional reliability, and improving workflow and productivity remain extremely important to me. As such, I will continue to work on this project, and other new ones like it, with the same original goal in mind._
 
-On a positive note, I can currently at least say that it is working properly, and that I am fairly happy with the look and performance.
+_On a positive note, I can currently at least say that it is working properly, and that I am fairly happy with the look and performance._
 
 Screenshots
 ----------------
