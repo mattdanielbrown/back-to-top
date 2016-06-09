@@ -14,7 +14,9 @@ The button is originally hidden, and fades in as the user scrolls.
 
 100% Responsive.
 
-![alt text](https://raw.githubusercontent.com/mattdanielbrown/back-to-top/master/_docs/backtotop-mobile.jpg "Back-To-Top Screenshot 3 (mobile size)")
+![alt text](https://raw.githubusercontent.com/mattdanielbrown/back-to-top/master/_docs/backtotop-mobile1.png "Back-To-Top Screenshot 3 (mobile size)")
+
+![alt text](https://raw.githubusercontent.com/mattdanielbrown/back-to-top/master/_docs/backtotop-mobile2.png "Back-To-Top Screenshot 4 (mobile size 2)")
 
 See It In Action
 ----------------
